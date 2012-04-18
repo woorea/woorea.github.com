@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Woorea OpenStack UI (18 apr 2012)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="WOOREA - Luis Gervaso">
+
+    <!-- Le styles -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
+    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="../assets/img/favicon.ico">
+    <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../assets/img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../assets/img/apple-touch-icon-114x114.png">
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-29428323-1']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+  </head>
+
+  <body>
+
+    <div class="container">
+	
+		<h1>OpenStack UI 1.0 RC1 - QuickStart</h1>
+		
+		<h2>Summary</h2>
+		
+		<p>OpenStack UI is a GWT UI intended to be a base platform to integrate OpenStack related services.</p>
+		<p>It's built upon <a href="http://github.com/woorea/openstack-java-sdk" target="_blank">OpenStack Java SDK</a>.</p>
+		
+		<h2>Environment / Requeriments</h2>
+		
+		<pre>
+			Apache Maven 3.0.3 (r1075438; 2011-02-28 18:31:09+0100)
+			Maven home: /usr/share/maven
+			Java version: 1.6.0_26, vendor: Apple Inc.
+			Java home: /System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
+			Default locale: en_US, platform encoding: MacRoman
+			OS name: "mac os x", version: "10.6.8", arch: "x86_64", family: "mac"
+		</pre>
+		
+		<h2>Download</h2>
+		
+		<ul>
+			<li><a href="https://github.com/downloads/woorea/openstack-ui/ui.jar">Download standalone prepackaged war (25.1MB)</a></li>
+			<li>Clone or fork at http://github.com/woorea/openstack-ui</li>
+		</ul>
+	
+		<h2>Installation</h2>
+		
+		<p>The OpenStack UI has been tested only with devstack stable/essex branch</p>
+		
+		<h3>DevStack Installation</h3>
+		<ul>
+			<li>#git clone https://github.com/openstack-dev/devstack.git</li>
+			<li>#cd devstack && ./stack.sh</li>
+		</ul>
+		
+		<h3>Execute OpenStack UI Standalone</h3>
+		
+		<ul>
+			<li>java -jar ui.war</li>
+			<li>Open your browser : http://localhost:8080/ui</li>
+		</ul>
+		
+		<p>The config screen allow you to specify where are your identity endpoints, and the admin token you specified when you installed devstack</p>
+		
+		<p>For more information about the execution you can read <a href="http://tomcat.apache.org/maven-plugin-2.0-SNAPSHOT/tomcat7-maven-plugin/index.html" target="_blank">Tomcat 7 Maven Plugin</a>
+			
+		<h2>Issues</h2>
+		
+		<p><a href="https://github.com/woorea/openstack-ui/issues">https://github.com/woorea/openstack-ui/issues</a></p>
+	
+		<h2>UI Configuration</h2>
+		
+		<table>
+			<tr>
+				<td style="vertical-align: top; width: 150px;"></td>
+				<td><img src="screenshots/config.jpg" /></td>
+			</tr>
+		</table>
+	
+		<h2>Identity</h2>
+	
+		<table>
+			<tr>
+				<td style="vertical-align: top; width: 150px;">Tenants</td>
+				<td><img src="screenshots/tenants.jpg" /></td>
+			</tr>
+			<tr>
+				<td style="vertical-align: top; width: 150px;">Users</td>
+				<td><img src="screenshots/users.jpg" /></td>
+			</tr>
+			<tr>
+				<td style="vertical-align: top; width: 150px;">Roles</td>
+				<td><img src="screenshots/roles.jpg" /></td>
+			</tr>
+			<tr>
+				<td style="vertical-align: top; width: 150px;">Services</td>
+				<td><img src="screenshots/services.jpg" /></td>
+			</tr>
+		</table>
+		
+		<h2>Compute</h2>
+
+		<table>
+			<tr>
+				<td style="vertical-align: top; width: 150px;">Servers</td>
+				<td><img src="screenshots/servers.jpg" /></td>
+			</tr>
+			<tr>
+				<td style="vertical-align: top; width: 150px;">Images</td>
+				<td><img src="screenshots/servers.jpg" /></td>
+			</tr>
+			<tr>
+				<td style="vertical-align: top; width: 150px;">Floating Ips</td>
+				<td><img src="screenshots/floatingips.jpg" /></td>
+			</tr>
+			<tr>
+				<td style="vertical-align: top; width: 150px;">Volumes</td>
+				<td><img src="screenshots/volumes.jpg" /></td>
+			</tr>
+			<tr>
+				<td style="vertical-align: top; width: 150px;">Snapshots</td>
+				<td><img src="screenshots/snapshots.jpg" /></td>
+			</tr>
+			<tr>
+				<td style="vertical-align: top; width: 150px;">Key Pairs</td>
+				<td><img src="screenshots/keypairs.jpg" /></td>
+			</tr>
+			<tr>
+				<td style="vertical-align: top; width: 150px;">Security Groups</td>
+				<td><img src="screenshots/securitygroups.jpg" /></td>
+			</tr>
+		</table>
+		
+		<h2>License</h2>
+		
+		<p>Apache 2 License</p>
+
+      <hr>
+
+      <footer>
+        <p>&copy; WOOREA 2012</p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+  </body>
+</html>
